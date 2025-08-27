@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Tadle Docs',
+  tagline: 'The Parallel Sandbox opening a new dimension of accessing dApps.',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://docs.tadle.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  // organizationName: 'facebook', // Usually your GitHub org/user name.
+  // projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -41,7 +41,10 @@ const config: Config = {
       'classic',
       {
         docs: {
+          routeBasePath: '/', 
           sidebarPath: './sidebars.ts',
+          sidebarCollapsed: false,           // 默认展开分类
+          sidebarCollapsible: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -71,72 +74,35 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/social-card.png',
+    metadata: [
+      {name: 'description', content: 'Tadle - The Parallel Sandbox opening a new dimension of accessing dApps.'},
+      
+      // Open Graph
+      {property: 'og:title', content: 'Tadle Docs'},
+      {property: 'og:description', content: 'Tadle - The Parallel Sandbox opening a new dimension of accessing dApps.'},
+      {property: 'og:type', content: 'website'},
+      {property: 'og:image', content: 'https://v3.tadle.com/images/UjXLk9pSW552Wq3jVMIQU.png'},
+      {property: 'og:url', content: 'https://docs.tadle.com'},
+
+      // Twitter Card
+      {name: 'twitter:card', content: 'summary_large_image'},
+      {name: 'twitter:title', content: 'Tadle Docs'},
+      {name: 'twitter:description', content: 'Tadle - The Parallel Sandbox opening a new dimension of accessing dApps.'},
+      {name: 'twitter:image', content: 'https://v3.tadle.com/images/UjXLk9pSW552Wq3jVMIQU.png'},
+      {name: 'twitter:site', content: '@tadle_com'},
+    ],
     navbar: {
-      title: 'My Site',
+      title: '',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Tadle Logo',
         src: 'img/logo.svg',
+        srcDark: 'img/logo-dark.svg'
       },
-      items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
-      ],
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Tadle Foundation, All Rights Reserved.`,
     },
     prism: {
       theme: prismThemes.github,
