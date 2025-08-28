@@ -29,9 +29,9 @@ const sidebars: SidebarsConfig = {
       label: 'Getting Started',
       collapsible: false,
       items: [
-        'getting-started/quickstart',
-        'getting-started/create-dsa-account',
+        'getting-started/quickstart',        
         'getting-started/get-mon',
+        'getting-started/create-dsa-account',
         'getting-started/create-coin'
       ]
     },
@@ -70,6 +70,17 @@ const sidebars: SidebarsConfig = {
       items: [
         'collaboration/ambassador-program',
         'collaboration/submit-integration-request'
+      ]
+    },
+    {
+      type: 'category',
+      label: 'FAQ',
+      collapsible: false,
+      items: [
+        'faq/overview',
+        'faq/what-s-tadle',
+        'faq/how-does-parallel-execution-boost-the-transactions',
+        'faq/what-s-bft-consensus'
       ]
     }
   ]
