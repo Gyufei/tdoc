@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
@@ -41,29 +41,14 @@ const config: Config = {
       'classic',
       {
         docs: {
-          routeBasePath: '/', 
+          routeBasePath: '/',
           sidebarPath: './sidebars.ts',
-          sidebarCollapsed: false,           // 默认展开分类
+          sidebarCollapsed: false, // 默认展开分类
           sidebarCollapsible: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -76,33 +61,29 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/social-card.png',
     metadata: [
-      {name: 'description', content: 'Tadle - The Parallel Sandbox opening a new dimension of accessing dApps.'},
-      
+      { name: 'description', content: 'Tadle - The Parallel Sandbox opening a new dimension of accessing dApps.' },
+
       // Open Graph
-      {property: 'og:title', content: 'Tadle Docs'},
-      {property: 'og:description', content: 'Tadle - The Parallel Sandbox opening a new dimension of accessing dApps.'},
-      {property: 'og:type', content: 'website'},
-      {property: 'og:image', content: 'https://v3.tadle.com/images/UjXLk9pSW552Wq3jVMIQU.png'},
-      {property: 'og:url', content: 'https://docs.tadle.com'},
+      { property: 'og:title', content: 'Tadle Docs' },
+      { property: 'og:description', content: 'Tadle - The Parallel Sandbox opening a new dimension of accessing dApps.' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:image', content: 'https://v3.tadle.com/images/UjXLk9pSW552Wq3jVMIQU.png' },
+      { property: 'og:url', content: 'https://docs.tadle.com' },
 
       // Twitter Card
-      {name: 'twitter:card', content: 'summary_large_image'},
-      {name: 'twitter:title', content: 'Tadle Docs'},
-      {name: 'twitter:description', content: 'Tadle - The Parallel Sandbox opening a new dimension of accessing dApps.'},
-      {name: 'twitter:image', content: 'https://v3.tadle.com/images/UjXLk9pSW552Wq3jVMIQU.png'},
-      {name: 'twitter:site', content: '@tadle_com'},
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: 'Tadle Docs' },
+      { name: 'twitter:description', content: 'Tadle - The Parallel Sandbox opening a new dimension of accessing dApps.' },
+      { name: 'twitter:image', content: 'https://v3.tadle.com/images/UjXLk9pSW552Wq3jVMIQU.png' },
+      { name: 'twitter:site', content: '@tadle_com' },
     ],
     navbar: {
       title: '',
       logo: {
         alt: 'Tadle Logo',
         src: 'img/logo.svg',
-        srcDark: 'img/logo-dark.svg'
+        srcDark: 'img/logo-dark.svg',
       },
-    },
-    footer: {
-      style: 'dark',
-      copyright: `Copyright © ${new Date().getFullYear()} Tadle Foundation, All Rights Reserved.`,
     },
     prism: {
       theme: prismThemes.github,

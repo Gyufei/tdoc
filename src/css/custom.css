@@ -6,21 +6,30 @@
 
 /* You can override the default Infima variables here. */
 :root {
-
   /* color theme */
-  --ifm-color-primary: #6E75F9;
+  --ifm-color-primary: #6e75f9;
   --ifm-color-primary-dark: #6369e0;
   --ifm-color-primary-darker: #5b61d0;
   --ifm-color-primary-darkest: #4a4faa;
   --ifm-color-primary-light: #7e84fa;
   --ifm-color-primary-lighter: #8d92fb;
   --ifm-color-primary-lightest: #aab0fc;
+  --ifm-menu-color: #707da4;
+  --ifm-menu-color-background-active: #fafafa;
+  --ifm-menu-color-background-hover: #fafafa;
+
+  --ifm-h1-font-size: 30px;
+  --ifm-h2-font-size: 24px;
+  --ifm-h3-font-size: 20px;
+  --ifm-h4-font-size: 18px;
+  --ifm-h5-font-size: 16px;
+  --ifm-h6-font-size: 14px;
 
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
   /* font-family */
-  --ifm-font-family-base: Aeonik, Arial, Helvetica Neue, Segoe UI, Roboto, BlinkMacSystemFont, sans-seri;
+  --ifm-font-family-base: Aeonik, Arial, Helvetica Neue, Segoe UI, Roboto, BlinkMacSystemFont, sans-serif;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -32,6 +41,17 @@
   --ifm-color-primary-light: #a3a8fb;
   --ifm-color-primary-lighter: #b7bbfc;
   --ifm-color-primary-lightest: #d3d5fe;
+
+  --ifm-h1-font-size: 30px;
+  --ifm-h2-font-size: 24px;
+  --ifm-h3-font-size: 20px;
+  --ifm-h4-font-size: 18px;
+  --ifm-h5-font-size: 16px;
+  --ifm-h6-font-size: 14px;
+
+  --ifm-menu-color-background-active: #131313;
+  --ifm-menu-color-background-hover: #131313;
+
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
@@ -75,3 +95,179 @@
   font-display: swap;
 }
 
+/** navbar **/
+.navbar__logo img {
+  height: 24px;
+}
+
+.theme-layout-navbar {
+  padding: 10px 24px;
+}
+
+/** sidebar **/
+.theme-doc-sidebar-container .menu {
+  padding: 24px 32px;
+}
+
+.menu__link {
+  font-size: 14px;
+  color: var(--ifm-menu-color);
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible > .menu__link {
+  color: #131e40;
+  font-weight: 500;
+}
+
+[data-theme='dark'] .theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible > .menu__link {
+  color: #fafafa;
+}
+
+.theme-doc-sidebar-item-link-level-2 > .menu__link--active,
+.theme-doc-sidebar-item-link-level-3 > .menu__link--active {
+  color: var(--ifm-menu-color-active);
+  font-weight: 500;
+  background-color: transparent;
+}
+
+.theme-doc-sidebar-item-link-level-2 > .menu__link--active:hover,
+.theme-doc-sidebar-item-link-level-3 > .menu__link--active:hover {
+  background-color: var(--ifm-menu-color-background-active);
+}
+
+.menu__link--sublist-caret:after {
+  background: var(--ifm-menu-link-sublist-icon) 50% / 1.5rem 1.5rem;
+  filter: opacity(0.6);
+}
+
+.theme-doc-sidebar-item-category-level-2 > ul.menu__list {
+  border-left: 1px solid #ebebeb;
+  padding-left: 0px;
+  margin-left: 12px;
+}
+
+[data-theme='dark'] .theme-doc-sidebar-item-category-level-2 > ul.menu__list {
+  border-left: 1px solid #262626;
+}
+
+.theme-doc-sidebar-item-link-level-3 > .menu__link--active {
+  border-left: 1px solid var(--ifm-color-primary);
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/** breadcrumbs **/
+.theme-doc-breadcrumbs .breadcrumbs .breadcrumbs__item:first-child {
+  display: none;
+}
+
+.breadcrumbs__link {
+  font-size: 14px;
+  color: #a5adc6;
+  font-weight: 500;
+}
+
+.breadcrumbs__item:not(.breadcrumbs__item--active) .breadcrumbs__link:hover {
+  color: #131e40;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+[data-theme='dark'] .breadcrumbs__item:not(.breadcrumbs__item--active) .breadcrumbs__link:hover {
+  color: #fafafa;
+}
+
+.breadcrumbs__item.breadcrumbs__item--active .breadcrumbs__link {
+  background-color: transparent;
+  color: var(--ifm-color-primary);
+}
+
+/** headings **/
+.markdown h1 {
+  --ifm-h1-font-size: 30px;
+}
+
+/** pagination **/
+.pagination-nav__link {
+  border: 1px solid #ebebeb;
+}
+
+.pagination-nav__link.pagination-nav__link--prev {
+  padding-left: 48px;
+}
+
+.pagination-nav__link.pagination-nav__link--next {
+  padding-right: 48px;
+}
+
+.pagination-nav__link:hover {
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.pagination-nav__link .pagination-nav__sublabel {
+  font-size: 12px;
+  color: #707da4;
+}
+
+.pagination-nav__link .pagination-nav__label {
+  color: #131e40;
+  position: relative;
+}
+
+[data-theme='dark'] .pagination-nav__link .pagination-nav__label {
+  color: #fafafa;
+}
+
+.pagination-nav__link:hover .pagination-nav__label {
+  color: var(--ifm-color-primary);
+}
+
+.pagination-nav__link--prev .pagination-nav__label::before,
+.pagination-nav__link--next .pagination-nav__label::before {
+  content: '';
+  background-image: url('/img/left.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -10px;
+}
+
+.pagination-nav__link--prev .pagination-nav__label::before {
+  left: -34px;
+}
+
+.pagination-nav__link--next .pagination-nav__label::before {
+  right: -34px;
+  transform: rotate(180deg);
+}
+
+.pagination-nav__link--next .pagination-nav__label::after {
+  content: '';
+}
+
+.table-of-contents__left-border {
+  border: none;
+}
+
+.table-of-contents li ul .table-of-contents__link {
+  padding-left: 12px;
+  border-left: 1px solid #ebebeb;
+}
+
+.table-of-contents li ul .table-of-contents__link.table-of-contents__link--active {
+  border-left: 1px solid var(--ifm-color-primary);
+  padding-left: 15px;
+}
+
+.table-of-contents li ul {
+  padding-left: 0;
+}
+
+.table-of-contents li ul li {
+  margin-left: 0;
+}
