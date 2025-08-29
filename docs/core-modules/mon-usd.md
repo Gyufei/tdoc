@@ -5,11 +5,11 @@ sidebar_position: 1
 # monUSD
 
 
-**monUSD** is a stablecoin on the Monad network designed to maintain a **1:1 peg with USD**, offering users a reliable medium for trading, payments, and DeFi interactions.
+**monUSD** is a stablecoin on the [Monad network](https://www.monad.xyz/) designed to maintain a **1:1 peg with USD**, offering users a reliable medium for trading, payments, and DeFi interactions.
 
 ---
 
-### Key Features
+## Key Features
 
 - **Stable Value**: Maintains parity with the US Dollar (1 monUSD ≈ 1 USD).  
 - **Monad Network Native**: Fully integrated with Monad ecosystem protocols.  
@@ -18,11 +18,18 @@ sidebar_position: 1
 
 ---
 
-### Quick Guide: Using monUSD
+## Quick Guide: Using monUSD
 
-1. **Obtain monUSD**  
+### 1. Obtain monUSD
    Swap your ETH, USDT, or USDC via **Tadle Token Station** into monUSD.  
-2. **Transfer monUSD**  
+### 2. Transfer monUSD
    Send monUSD to another wallet if needed.  
-3. **Use monUSD**  
-   Use monUSD for trading, liquidity pr
+### 3. Use monUSD
+   Use monUSD for trading, liquidity provision, or other Monad DeFi applications.
+
+
+## Tips
+- Always check the **current balance and network** before swapping to monUSD.  
+- Ensure you have sufficient gas fees for transactions on the Monad network.  
+- monUSD is pegged to USD, but network fees and bridge transfers may vary.  
+
