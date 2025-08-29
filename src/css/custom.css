@@ -316,7 +316,7 @@
   .navbar__inner {
     display: flex;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0;
   }
 
   .theme-layout-navbar-left {
@@ -339,6 +339,9 @@
   .theme-layout-navbar-right {
     position: absolute;
     right: 1rem;
+  }
+  .navbar__logo{
+    height: 1.5rem;
   }
 
   /** pagination **/
