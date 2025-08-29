@@ -6,4 +6,4 @@ sidebar_position: 1
 
 1. [Get $MON](get-mon)
 2. [Create a DSA Account](create-dsa-account)
-3. [Create coin](create-coin)
+3. [Create Coin](create-coin)

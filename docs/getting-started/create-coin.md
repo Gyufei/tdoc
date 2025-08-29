@@ -5,25 +5,48 @@ sidebar_position: 4
 # Create Coin
 
 
-Tadle also supports **creating your own coin**. On the **Uniswap page**, you can:
+Tadle also allows you to **create your own coin** directly on the [Uniswap page](https://v3.tadle.com/uniswap?chain=monad):
 
-- Create Coin.  
-- After creating the token, you can **create a position** directly.
+- Create your token.  
+- After creating the token, optionally **create a Uniswap position** for it immediately.
+
+This guide helps you quickly create a token on [Uniswap](https://v3.tadle.com/uniswap?chain=monad) via Tadle, set its properties, and optionally create a Uniswap position with [monUSD](/docs/core-modules/mon-usd.md).
 
 ---
 
-### Quick Guide
+## Quick Guide: 
 
-1. Open the **Uniswap page** On Tadle.  
-2. Upload your **Token Image**.  
-3. Set the **Ticker Name**, **Total Supply**, **Token name** and **Descprition**. 
-4. (Optional) provide an **X link** or **Website link**.
-5. Create your token.  
-6. (Optional) Create a **position** for your token.
+### 1. Open Uniswap
+- Connect your wallet on the **Monad Network**.
+- Ensure your [DSA account](/docs/overview/what-s-dsa.md) is ready.
+- Go to the [Uniswap page](https://v3.tadle.com/uniswap?chain=monad) on Tadle.
 
+### 2. Upload Token Image
+- Upload an image to represent your token.
+- **Requirements:**  
+  - Square image (**1:1 ratio**)  
+  - Minimum **130×130 px**  
+  - Maximum file size **5 MB**
 
-> **Tips:**  
-> - Ensure your wallet is connected and set to the correct network before creating a token.  
-> - Double-check your **Ticker Name**, **Total Supply**, **Token name** and **Descprition** — Data cannot be changed after creation.  
-> - Be aware of gas fees when creating a token or adding liquidity.  
-> - After creation, verify your token on **Account Wallet Balance** before creating a position.
+### 3. Set Token Details
+- Set the following fields:  
+  - **Ticker Name**  
+  - **Total Supply**  
+  - **Token Name**  
+  - **Description**
+
+### 4. Optional: Provide Links
+- You can optionally provide an **X link** (Twitter) or **Website link** for your token.
+
+### 5. Create Token
+- Cost to deploy: **~0.02 MON**
+- Click **Create** and confirm the transaction in your wallet.
+
+### 6. Optional: Create Uniswap Position
+- After creating the token, you are recommended to  create a **Uniswap Position** pairing your token with **monUSD**.
+
+## Tips
+- Double-check all fields — these cannot be changed after creation.  
+- Be aware of **gas fees** when creating a token or adding liquidity.  
+- After creating the token, we recommend creating a **Uniswap Position** pairing your token with [monUSD](/docs/core-modules/mon-usd.md).
+
