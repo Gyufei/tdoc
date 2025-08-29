@@ -199,7 +199,7 @@
 
 /** headings **/
 .markdown h1 {
-  --ifm-h1-font-size: 30px;
+  --ifm-h1-font-size: 40px;
 }
 
 /** pagination **/
@@ -287,4 +287,83 @@
 
 .table-of-contents li ul li {
   margin-left: 0;
+}
+
+
+/** other style **/
+.theme-doc-markdown{
+  margin-left: 10px;
+}
+
+.theme-doc-markdown h3{
+  margin-left: 5px;
+}
+
+.theme-doc-markdown p{
+  margin-left: 5px;
+}
+
+.docusaurus-mt-lg{
+  margin-top: 4rem;
+}
+
+.theme-doc-toc-mobile{
+  display: none;
+}
+
+@media (max-width: 996px) {
+  /** navbar **/
+  .navbar__inner {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .theme-layout-navbar-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .navbar__toggle {
+    position: absolute;
+    left: 0;
+  }
+
+  .navbar__brand {
+    display: flex;
+    align-items: center;
+  }
+
+  .theme-layout-navbar-right {
+    position: absolute;
+    right: 1rem;
+  }
+
+  /** pagination **/
+  .pagination-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .pagination-nav__link {
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+    border: 1px solid var(--ifm-color-emphasis-300);
+    border-radius: var(--ifm-global-radius);
+  }
+
+
+  /* mobile optimize display */
+  .pagination-nav__sublabel {
+    font-size: 0.875rem;
+  }
+
+  .pagination-nav__label {
+    font-size: 1rem;
+  }
+
 }
