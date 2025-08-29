@@ -13,15 +13,15 @@ This guide helps you quickly create your [DSA account](/docs/overview/what-s-dsa
 
 ### 1. Open Tadle
 - Go to [Tadle v3](https://v3.tadle.com).
-- Make sure your wallet is connected to the **Monad Network**.
-
 
 ### 2. Connect Wallet
 - Connect your wallet on the **Monad Network**.
 - Ensure you have enough **$MON** to cover gas fees.
 
 ### 3. Create DSA Account
-- Click **"Create DSA Account"**.
+- Click **"Create Account"**.
+- Read the introduction to understand the DSA account’s purpose and features.
+- Then click **"Create DSA Account"**.
 
 ### 4. Confirm Transaction
 - Confirm the transaction in your wallet to finalize the account creation.

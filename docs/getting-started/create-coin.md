@@ -5,12 +5,12 @@ sidebar_position: 4
 # Create Coin
 
 
-Tadle also allows you to **create your own coin** directly on the [Uniswap page](https://v3.tadle.com/uniswap?chain=monad):
+[Tadle](https://v3.tadle.com) also allows you to **create your own coin** directly on the [Uniswap page](https://v3.tadle.com/uniswap?chain=monad):
 
-- Create your token.  
+- Create your own token
 - After creating the token, optionally **create a Uniswap position** for it immediately.
 
-This guide helps you quickly create a token on [Uniswap](https://v3.tadle.com/uniswap?chain=monad) via Tadle, set its properties, and optionally create a Uniswap position with [monUSD](/docs/core-modules/mon-usd.md).
+This guide helps you quickly create a token on [Uniswap](https://v3.tadle.com/uniswap?chain=monad) via [Tadle](https://v3.tadle.com), set its properties, and optionally create a Uniswap position with [monUSD](/docs/core-modules/mon-usd.md).
 
 ---
 
@@ -37,16 +37,16 @@ This guide helps you quickly create a token on [Uniswap](https://v3.tadle.com/un
 
 ### 4. Optional: Provide Links
 - You can optionally provide an **X link** (Twitter) or **Website link** for your token.
+- Double-check all fields — these cannot be changed after creation.  
 
 ### 5. Create Token
 - Cost to deploy: **~0.02 MON**
-- Click **Create** and confirm the transaction in your wallet.
+- Click **"Create"** and confirm the transaction in your wallet.
 
 ### 6. Optional: Create Uniswap Position
-- After creating the token, you are recommended to  create a **Uniswap Position** pairing your token with **monUSD**.
+- After creating the token, you are recommended to **create a Uniswap Position** pairing your token with **monUSD**.
 
 ## Tips
-- Double-check all fields — these cannot be changed after creation.  
 - Be aware of **gas fees** when creating a token or adding liquidity.  
-- After creating the token, we recommend creating a **Uniswap Position** pairing your token with [monUSD](/docs/core-modules/mon-usd.md).
+- we recommend creating a **Uniswap Position** pairing your token with [monUSD](/docs/core-modules/mon-usd.md). This will help increase your token’s liquidity and make it easier for others to trade.”
 

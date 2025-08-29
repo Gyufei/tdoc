@@ -4,6 +4,6 @@ sidebar_position: 1
 
 # Quickstart
 
-1. [Get $MON](get-mon)
-2. [Create a DSA Account](create-dsa-account)
-3. [Create Coin](create-coin)
+- [Get $MON](get-mon)
+- [Create a DSA Account](create-dsa-account)
+- [Create Coin](create-coin)

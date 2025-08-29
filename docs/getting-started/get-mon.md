@@ -29,12 +29,12 @@ Select **Ethereum** or **Base** to complete your exchange quickly and securely.
 - Choose **MON** as the token to receive(or [monUSD](/docs/core-modules/mon-usd.md) as an alternative)..
 
 ### 4. Optional: Specify Recipient
-- (Optional) Enter another wallet address if you want the tokens sent to a different address.
+- (Optional) Enter **another wallet address**  if you want the tokens sent to a different address.
 
 ### 5. Top Up
 - Ensure your wallet is on the **correct network** (**Ethereum** or **Base**) before proceeding.
 - Ensure you have enough native tokens (**ETH** or **Base ETH**) to cover network/gas fees.
-- Click **Top Up** to complete the swap and receive your tokens.
+- Click **"Top Up"** to complete the swap and receive your tokens.
 
 
 ## Notes
