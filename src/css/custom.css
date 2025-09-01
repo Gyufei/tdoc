@@ -57,7 +57,7 @@
 
 @font-face {
   font-family: Aeonik;
-  src: url('/fonts/Aeonik-Regular.ttf') format('truetype');
+  src: url('https://cdn.tadle.com/fonts/Aeonik-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -65,7 +65,7 @@
 
 @font-face {
   font-family: Aeonik;
-  src: url('/fonts/Aeonik-Light.ttf') format('truetype');
+  src: url('https://cdn.tadle.com/fonts/Aeonik-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -73,7 +73,7 @@
 
 @font-face {
   font-family: Aeonik;
-  src: url('/fonts/Aeonik-Black.ttf') format('truetype');
+  src: url('https://cdn.tadle.com/fonts/Aeonik-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -81,7 +81,7 @@
 
 @font-face {
   font-family: Aeonik;
-  src: url('/fonts/Aeonik-Medium.ttf') format('truetype');
+  src: url('https://cdn.tadle.com/fonts/Aeonik-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -89,7 +89,7 @@
 
 @font-face {
   font-family: Aeonik;
-  src: url('/fonts/Aeonik-Bold.ttf') format('truetype');
+  src: url('https://cdn.tadle.com/fonts/Aeonik-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -289,25 +289,24 @@
   margin-left: 0;
 }
 
-
 /** other style **/
-.theme-doc-markdown{
+.theme-doc-markdown {
   margin-left: 10px;
 }
 
-.theme-doc-markdown h3{
+.theme-doc-markdown h3 {
   margin-left: 5px;
 }
 
-.theme-doc-markdown p{
+.theme-doc-markdown p {
   margin-left: 5px;
 }
 
-.docusaurus-mt-lg{
+.docusaurus-mt-lg {
   margin-top: 4rem;
 }
 
-.theme-doc-toc-mobile{
+.theme-doc-toc-mobile {
   display: none;
 }
 
@@ -340,7 +339,7 @@
     position: absolute;
     right: 1rem;
   }
-  .navbar__logo{
+  .navbar__logo {
     height: 1.5rem;
   }
 
@@ -359,7 +358,6 @@
     border-radius: var(--ifm-global-radius);
   }
 
-
   /* mobile optimize display */
   .pagination-nav__sublabel {
     font-size: 0.875rem;
@@ -368,5 +366,4 @@
   .pagination-nav__label {
     font-size: 1rem;
   }
-
 }
