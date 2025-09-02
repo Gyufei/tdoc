@@ -59,7 +59,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'https://cdn.tadle.com/images/social-card.png',
+    image: 'https://cdn.tadle.com/images/thumbnail-1800_945.jpg',
     metadata: [
       { name: 'description', content: 'Tadle - The Parallel Sandbox opening a new dimension of accessing dApps.' },
 
@@ -67,14 +67,14 @@ const config: Config = {
       { property: 'og:title', content: 'Tadle Docs' },
       { property: 'og:description', content: 'Tadle - The Parallel Sandbox opening a new dimension of accessing dApps.' },
       { property: 'og:type', content: 'website' },
-      { property: 'og:image', content: 'https://cdn.tadle.com/images/social-card.png' },
+      { property: 'og:image', content: 'https://cdn.tadle.com/images/thumbnail-1800_945.jpg' },
       { property: 'og:url', content: 'https://docs.tadle.com' },
 
       // Twitter Card
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Tadle Docs' },
       { name: 'twitter:description', content: 'Tadle - The Parallel Sandbox opening a new dimension of accessing dApps.' },
-      { name: 'twitter:image', content: 'https://cdn.tadle.com/images/social-card.png' },
+      { name: 'twitter:image', content: 'https://cdn.tadle.com/images/thumbnail-1800_945.jpg' },
       { name: 'twitter:site', content: '@tadle_com' },
     ],
     navbar: {
